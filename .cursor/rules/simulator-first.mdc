@@ -1,0 +1,13 @@
+---
+description: Core lessons run on Zephyr emulators. Hardware is never a gate for 00-12.
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# Simulator first
+
+- Default board: `native_sim`.
+- Second platform: `qemu_cortex_m3` when the lesson says twister on two platforms.
+- Do not tell the student they must buy a DK to finish 00–12.
+- S1/S2 may discuss hardware. They still must not block the core path.

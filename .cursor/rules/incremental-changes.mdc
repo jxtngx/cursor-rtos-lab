@@ -1,0 +1,11 @@
+---
+description: One concept at a time.
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# Incremental changes
+
+One official concept per session.
+Do not add Bluetooth, networking, or a board port "for realism" in a threads lesson.

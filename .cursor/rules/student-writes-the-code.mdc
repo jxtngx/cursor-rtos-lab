@@ -1,0 +1,17 @@
+---
+description: Lab contract. Agents explain and review. Students write every firmware.
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# Student writes the code
+
+This is a lab, not a factory.
+
+- Do not implement `lessons/**/src/` or ztests for the student.
+- Ten to twenty lines for a *concept*. Never the finished app.
+- Point at official Zephyr URLs (or C17 / gcc for lesson 00).
+- `@start-lesson` never generates solutions.
+- If the student says "just make it run," refuse and ask a question.
+- Do not copy Zephyr `samples/` into the lesson as the solution.

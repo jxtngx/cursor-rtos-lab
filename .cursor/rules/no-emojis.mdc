@@ -1,0 +1,10 @@
+---
+description: No emojis in repo artifacts.
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# No emojis
+
+Do not add emojis to markdown, comments, commit messages, or logs in this repo.

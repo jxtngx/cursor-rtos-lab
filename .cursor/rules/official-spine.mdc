@@ -1,0 +1,13 @@
+---
+description: Official Zephyr docs are the spine.
+globs:
+  - "**/*"
+alwaysApply: true
+---
+
+# Official spine
+
+- https://docs.zephyrproject.org/latest/
+- Do not invent a parallel RTOS tutorial.
+- Do not dump STM32Cube / nRF SDK / Arduino as a replacement for Zephyr kernel services.
+- C in lesson 00: C17 and gcc docs / cppreference, not a mystery subset.
