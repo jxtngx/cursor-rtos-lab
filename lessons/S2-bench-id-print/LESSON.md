@@ -1,9 +1,7 @@
 # Supplementary S2 — Bench, industrial design, 3D print
 
-> Concept: firmware sits in a box on a bench. You should be able to talk about measurement, enclosure, and how a hobbyist FDM part becomes that box.
-> Run: **NOTES + CAD source you write**. No store run required. No "buy this exact oscilloscope" mandate.
-
-The prompt for this lesson stopped at "3D printing with". This lab treats that as **hobbyist FDM**: CAD you control → slicer → printer. Default CAD: **FreeCAD** and/or **OpenSCAD** (you pick one and stay with it). Default slicer family: PrusaSlicer / OrcaSlicer or the slicer that actually drives your printer. Name what you used.
+> Concept: firmware sits in a box on a bench. You should be able to talk about measurement, enclosure, and how that box is made on a **TAA- and NDAA-aware** printer class already in public US military / DoD use.
+> Run: **NOTES + CAD source you write**. No requirement to buy a printer. No classified sources.
 
 ## Read first — hobbyist bench (EE)
 
@@ -19,11 +17,21 @@ The prompt for this lesson stopped at "3D printing with". This lab treats that a
 - [ ] Labeling, revision of a mechanical part vs firmware revision
 - [ ] IP / drop / heat as **questions**, not a certification you fake
 
-## Read first — 3D printing (hobbyist FDM)
+## Read first — TAA, NDAA, and military AM
 
-- [ ] Process: model → STL/3MF → slice (layer height, infill, supports, walls) → print
-- [ ] Tolerances for a PCB: hole vs boss, USB/USB-C opening, header clearance
-- [ ] Material: PLA vs PETG vs ABS as a **use** choice (heat, toughness), not a brand loyalty test
+Public law and public strategy only. You cite pages. You do not invent a waiver.
+
+- [ ] **TAA** — Trade Agreements Act. What "TAA compliant" means for federal procurement (end product of the US or a designated country). Start at GSA's TAA materials, then a vendor's *current* TAA statement for the machine family you pick
+- [ ] **NDAA / covered AM** — the enacted National Defense Authorization Act language on **additive manufacturing machines** tied to covered nations (public reporting: PRC, Russia, Iran, DPRK; manufacture, software, or networking). Read the **bill text** on [congress.gov](https://www.congress.gov/), not a reseller blog, as the source of truth. Note effective dates and exceptions in your own words
+- [ ] **DoD AM policy (unclassified):** [DoD Additive Manufacturing Strategy](https://www.cto.mil/wp-content/uploads/2021/01/dod-additive-manufacturing-strategy.pdf) and [DoDI 5000.93](https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/500093p.PDF) (Use of Additive Manufacturing in the DoD)
+- [ ] **In-use, public:** pick **one** printer *family* with a **public** US military or DoD-use citation (press, contract announcement, service story) **and** a TAA/NDAA story you can defend. Examples that have *public* DoD/service footprints (you still verify; this is not an endorsement list): industrial FDM such as **Stratasys F-series** (including DoD-oriented security options such as ProtectAM where public), composite FFF such as **Markforged** (public Army / USMC field stories). Metal powder or MJF is allowed if you can cite both use and compliance — do not pick it only because it sounds serious
+- [ ] **Out of scope as the lab target:** consumer FDM from a covered nation, or a cloud-sliced hobby printer whose vendor, firmware, or telemetry you cannot square with TAA/NDAA. If that is what sits on your desk, you may use it only as a *stand-in* after you document why it would not be the procurement path
+
+## Read first — process (on the family you named)
+
+- [ ] Build volume, materials, and slice/CAM stack **for that family** (e.g. GrabCAD Print, Eiger — name the real one)
+- [ ] Process: CAD you control → export (STL/3MF) → vendor CAM/slice → print
+- [ ] Tolerances for a PCB: hole vs boss, USB/USB-C opening, header clearance, **on that machine's accuracy class**, not a $200 bed
 - [ ] What not to print as a structural lie (load-bearing clips on hot SoCs, insulating a PSU mains side)
 
 ## Plan of work
@@ -31,17 +39,24 @@ The prompt for this lesson stopped at "3D printing with". This lab treats that a
 - **A. Read first**
 - **B.** `NOTES.md`: a one-page bench map — if your Zephyr DK (or a named official board from S1) misbehaves, which instrument you reach for first and what a useful capture looks like
 - **C.** Industrial-design notes: 8–12 sentences on an enclosure for that board (power entry, debug access without opening, how the shield/header is treated)
-- **D.** You **write** CAD source (OpenSCAD `.scad` or FreeCAD-exported model + the parametric choices in `NOTES.md`) for a **tray or lid** that matches the board outline from the vendor drawing or a measured rectangle you recorded. Include standoff holes. This is the 3D-print artifact. Slicing a real print is stretch
-- **E.** `@checkpoint`
+- **D.** `NOTES.md` **printer card** (required):
+  - Manufacturer + family + one representative model
+  - Public US military / DoD use citation (URL + one-sentence claim)
+  - TAA: designated-country / end-product claim you found, or an honest "not stated — therefore I cannot claim TAA"
+  - NDAA: covered-nation analysis in your words (where made, where software lives, whether it phones home)
+  - Build volume and material you designed for
+- **E.** You **write** CAD source (OpenSCAD `.scad` or FreeCAD + parametric choices in `NOTES.md`) for a **tray or lid** that fits the board and **fits that printer's build volume**. Include standoff holes. A real print is stretch; if you print on a non-compliant stand-in, say so in `NOTES.md`
+- **F.** `@checkpoint`
 
 ## Definition of done
 
-You can walk from "twister is green on native_sim" to "this is the box and the first probe I grab" without a shopping-list essay.
+You can walk from "twister is green on native_sim" to "this is the box, the first probe I grab, and the printer class I would put on a TAA/NDAA-aware floor."
 The CAD file is yours. A downloaded "Raspberry Pi case" is not S2.
+You did not treat a covered-nation hobby printer as the military path.
 
 ## What this lesson is not
 
-- A requirement to buy a Keysight bench
+- A requirement to buy a Stratasys or Markforged
+- ITAR/classified process data, or a claim of current contract eligibility
 - A full ID degree
-- CNC/metal as a gate (FDM is enough)
 - Skipping S1's board names — pick one board and design around it
