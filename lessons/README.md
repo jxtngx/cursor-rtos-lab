@@ -23,7 +23,7 @@ They do not implement.
 | 10 | [10-drivers-sim](10-drivers-sim/LESSON.md) | UART, GPIO | native_sim |
 | 11 | [11-ztest-twister](11-ztest-twister/LESSON.md) | ztest, twister | both platforms |
 | 12 | [12-firmware](12-firmware/LESSON.md) | capstone | both platforms |
-| S1 | [S1-boards-shields](S1-boards-shields/LESSON.md) | boards, shields | NOTES + overlay you wrote |
+| S1 | [S1-boards-shields](S1-boards-shields/LESSON.md) | boards, shields, Blue/Green | NOTES + overlay + component card |
 | S2 | [S2-bench-id-print](S2-bench-id-print/LESSON.md) | bench, ID, TAA/NDAA AM | NOTES + CAD you wrote |
 
 ## How to start

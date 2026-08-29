@@ -74,7 +74,7 @@ Not a substitute for 00–12. Hardware purchase is optional.
 
 | # | Lesson | You produce |
 | --- | --- | --- |
-| S1 | [Boards and shields](lessons/S1-boards-shields/LESSON.md) | NOTES + a shield skeleton / overlay you wrote |
+| S1 | [Boards and shields](lessons/S1-boards-shields/LESSON.md) | NOTES + shield skeleton + Blue/Green component card |
 | S2 | [Bench, industrial design, 3D print](lessons/S2-bench-id-print/LESSON.md) | NOTES + CAD for a TAA/NDAA-aware, publicly documented military AM family |
 
 ## How you are supposed to work

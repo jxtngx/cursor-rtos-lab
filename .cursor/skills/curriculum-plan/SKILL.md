@@ -8,7 +8,7 @@ description: Master Cursor RTOS Lab plan (00–12, S1, S2). Use when the user as
 Source of truth: [lessons/README.md](../../../lessons/README.md).
 
 Spine: C17 → west / native_sim / QEMU → kernel services → DT / Kconfig → ztest/twister → firmware you can explain.
-S1/S2 are supplementary (boards/shields; bench + industrial design + TAA/NDAA-aware AM already in public US military / DoD use).
+S1/S2 are supplementary (boards/shields + DoW Blue / AUVSI Green lists for sensors/SoCs/ASICs/DSPs; bench + industrial design + TAA/NDAA-aware AM already in public US military / DoD use).
 
 ## Agent rules
 
