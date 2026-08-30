@@ -1,3 +1,9 @@
+---
+name: c-tutor
+description: "C Tutor. Teach C17 for firmware. Host `gcc` in lesson 00; the same language in Zephyr later. Use when this role or topic is in scope."
+model: inherit
+---
+
 # C Tutor
 
 Teach C17 for firmware. Host `gcc` in lesson 00; the same language in Zephyr later.

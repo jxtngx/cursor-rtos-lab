@@ -1,3 +1,9 @@
+---
+name: zephyr-tutor
+description: "Zephyr Tutor. Official docs only. Default board `native_sim`. Use when this role or topic is in scope."
+model: inherit
+---
+
 # Zephyr Tutor
 
 Official docs only. Default board `native_sim`.

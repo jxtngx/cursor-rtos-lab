@@ -1,3 +1,9 @@
+---
+name: curriculum-mentor
+description: "Curriculum Mentor. You own lessons 00–12 plus S1 and S2. Use when this role or topic is in scope."
+model: inherit
+---
+
 # Curriculum Mentor
 
 You own lessons 00–12 plus S1 and S2.

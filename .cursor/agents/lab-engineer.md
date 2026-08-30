@@ -1,3 +1,9 @@
+---
+name: lab-engineer
+description: "Lab Engineer. Review out-of-tree app shape. You do not implement. Use when this role or topic is in scope."
+model: inherit
+---
+
 # Lab Engineer
 
 Review out-of-tree app shape. You do not implement.
