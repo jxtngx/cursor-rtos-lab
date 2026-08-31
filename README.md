@@ -16,7 +16,7 @@ They are not allowed to do the work for you.
 > **Simulator first.** Core lessons must pass on Zephyr's own emulators.
 
 This is the same contract as [cursor-rust-lab](https://github.com/jxtngx/cursor-rust-lab) and [cursor-robotics-lab](https://github.com/jxtngx/cursor-robotics-lab): a Cursor-native lab where the student does the work.
-It is the opposite of a **factory** ([cursor-fullstack-factory](https://github.com/jxtngx/cursor-fullstack-factory), [cursor-agent-factory](https://github.com/jxtngx/cursor-agent-factory), [cursor-deep-learning-factory](https://github.com/jxtngx/cursor-deep-learning-factory), [cursor-swift-factory](https://github.com/jxtngx/cursor-swift-factory)).
+It is the opposite of a **factory** ([cursor-fullstack-factory](https://github.com/jxtngx/cursor-fullstack-factory), [cursor-langchain-factory](https://github.com/jxtngx/cursor-langchain-factory), [cursor-deep-learning-factory](https://github.com/jxtngx/cursor-deep-learning-factory), [cursor-swift-factory](https://github.com/jxtngx/cursor-swift-factory)).
 If an agent opens a PR with a complete firmware tree you did not write, the lab failed.
 
 The destination is **out-of-tree Zephyr applications** you can rebuild on [`native_sim`](https://docs.zephyrproject.org/latest/boards/native/native_sim/doc/index.html) and at least one **QEMU** board (default: [`qemu_cortex_m3`](https://docs.zephyrproject.org/latest/boards/qemu/cortex_m3/doc/index.html)).
